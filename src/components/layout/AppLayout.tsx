@@ -1,14 +1,12 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
 import { Avatar } from '../common/Avatar';
 
 export function Header() {
   const { user, logout, isAdmin, hasProfile } = useAuth();
-  const navigate = useNavigate();
 
   function handleLogout() {
     logout();
-    navigate('/login');
   }
 
   const baseUrl = (import.meta.env.VITE_API_URL as string ?? '').replace('/api/v1', '');
