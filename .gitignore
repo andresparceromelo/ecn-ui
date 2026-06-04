@@ -4,3 +4,4 @@ dist/
 *.local
 *.tsbuildinfo
 uploads/
+dump_ecn.sql
