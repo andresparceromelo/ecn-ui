@@ -122,7 +122,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setError(null);
     setHasProfile(null);
     didInitialCheck.current = false;
-    window.location.href = '/login';
   }, []);
 
   const clearError = useCallback(() => setError(null), []);
